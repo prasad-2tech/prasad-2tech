@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Game Info</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+                                                                                                                                                           
+        body {
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ff4500;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .game-info {
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .team {
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .team img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #ff4500;
+        }
+
+        .versus {
+            margin: 0 20px;
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff4500;
+        }
+
+        .details {
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .details h3 {
+            margin-bottom: 15px;
+            color: #ff4500;
+        }
+
+        .start-button {
+            background: #ff4500;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .start-button:hover {
+            background: #e03e00;
+            transform: scale(1.05);
+        }
+
+        .highlights {
+            max-width: 1000px;
+            margin: 20px auto 40px auto;
+            text-align: center;
+        }
+
+        .highlight-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            overflow-x: auto;
+        }
+
+        .card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            flex: 0 0 auto;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        @media (max-width: 768px) {
+            .game-info {
+                flex-direction: column;
+            }
+
+            .versus {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Basketball Game Details</h1>
+    </header>
+
+    <section class="game-info">
+        <div class="team">
+            <img src="team1.png" alt="Team A Logo">
+            <h2>Team A</h2>
+        </div>
+        <div class="versus">
+            <h2>VS</h2>
+        </div>
+        <div class="team">
+            <img src="team2.png" alt="Team B Logo">
+            <h2>Team B</h2>
+        </div>
+    </section>
+
+    <section class="details">
+        <h3>Game Details</h3>
+        <p><strong>Date:</strong> December 15, 2025</p>
+        <p><strong>Time:</strong> 7:00 PM</p>
+        <p><strong>Venue:</strong> City Sports Arena</p>
+        <p><strong>Tickets:</strong> Available online and at the venue</p>
+        <!-- Start Game Button -->
+        <a href="https://www.crazygames.com/t/basketball" class="start-button" target="_blank">Start Game</a>
+    </section>
+
+    <section class="highlights">
+        <h3>Game Highlights</h3>
+        <div class="highlight-cards">
+            <div class="card">
+                <img src="highlight1.jpg" alt="Top Scorer of Last Match">
+                <p>Top Scorer of Last Match</p>
+            </div>
+            <div class="card">
+                <img src="highlight2.jpg" alt="Best Team Play">
+                <p>Best Team Play</p>
+            </div>
+            <div class="card">
+                <img src="highlight3.jpg" alt="Exciting Moment">
+                <p>Exciting Moment</p>
+            </div>
+            <!-- Another Start Game button in highlights -->
+            <a href="https://www.crazygames.com/t/basketball" class="start-button" target="_blank">Start Game</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Basketball League. All rights reserved.</p>
+    </footer>
+</body>
+</html>
